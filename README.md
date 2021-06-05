@@ -1,2 +1,1 @@
-# docs
-The documentation source for krok.github.io.
+# Doks child theme
