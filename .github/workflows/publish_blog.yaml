@@ -12,7 +12,7 @@ jobs:
     - name: blog-publisher
       uses: skarlso/blog-publisher@master
       with:
-        repo: krok-o/krok-o.github.io
+        repo: krok-o/krok-o.github.io.git
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
