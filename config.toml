@@ -2,7 +2,7 @@ baseURL = "https://krok-o.github.io"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "Krok Documentation"
+title = "Krok Documentation Update"
 theme = "learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
