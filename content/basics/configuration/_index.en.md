@@ -1,5 +1,4 @@
 ---
-date: 2021-06-09T16:50:16+02:00
 title: Configuration
 weight: 20
 ---
