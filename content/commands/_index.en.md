@@ -1,11 +1,11 @@
 ---
 title: Commands
 weight: 5
-pre: "<b>1. </b>"
+pre: "<b>3. </b>"
 chapter: true
 ---
 
-### Chapter 1
+### Chapter 3
 
 # Commands
 
