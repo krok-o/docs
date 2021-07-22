@@ -13,3 +13,12 @@ To contribute to this documentation you have to do the following:
 - submit a PR
 
 Once the PR is merged, github actions will publish the documentation under https://krok.app.
+
+The api documentation is available through Swagger and is generated in Krok directly
+then copied over here. If there is a change in the API, run the following commands:
+
+```
+make swagger && make swagger-docs
+```
+
+Fix any errors which might occur then copy the content from `docs/swagger.md` to the API docs.
