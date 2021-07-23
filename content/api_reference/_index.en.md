@@ -6,7 +6,6 @@ chapter: false
 ---
 
 # Krok
-
 Documentation of the Krok API.
 
 
@@ -2314,7 +2313,7 @@ an ID is generated. |  |
 
 required false | `10` |
 | StartingDate | date-time (formatted string)| `strfmt.DateTime` |  | | StartingDate defines a date of start to look for events. Inclusive. | `2021-02-02` |
-| VCS | int64 (formatted integer)| `int64` |  | | Only list all entries for a given platform ID. |  |
+| VCS | int64 (formatted integer)| `int64` |  | | Only list all entries for a given platform ID. | `1` |
 
 
 
