@@ -84,7 +84,7 @@ Documentation of the Krok API.
 
 ## Paths
 
-### <span id="add-command-rel-for-platform-command"></span> Adds a connection to a platform for a command. Defines what platform a command supports. These commands will only be able to run for those platforms. (*addCommandRelForPlatformCommand*)
+### Adds a connection to a platform for a command. Defines what platform a command supports. These commands will only be able to run for those platforms. (*addCommandRelForPlatformCommand*)
 
 ```
 POST /rest/api/1/command/add-command-rel-for-platform/{cmdid}/{repoid}
@@ -107,30 +107,30 @@ POST /rest/api/1/command/add-command-rel-for-platform/{cmdid}/{repoid}
 #### Responses
 
 
-##### <span id="add-command-rel-for-platform-command-200"></span> 200 - successfully added relationship
+##### 200 - successfully added relationship
 Status: OK
 
-###### <span id="add-command-rel-for-platform-command-200-schema"></span> Schema
+###### Schema
 
-##### <span id="add-command-rel-for-platform-command-400"></span> 400 - invalid ids or platform not found
+##### 400 - invalid ids or platform not found
 Status: Bad Request
 
-###### <span id="add-command-rel-for-platform-command-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="add-command-rel-for-platform-command-500"></span> 500 - failed to add command relationship to platform
+##### 500 - failed to add command relationship to platform
 Status: Internal Server Error
 
-###### <span id="add-command-rel-for-platform-command-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="add-command-rel-for-repository-command"></span> Add a connection to a repository. This will make this command to be executed for events for that repository. (*addCommandRelForRepositoryCommand*)
+### Add a connection to a repository. This will make this command to be executed for events for that repository. (*addCommandRelForRepositoryCommand*)
 
 ```
 POST /rest/api/1/command/add-command-rel-for-repository/{cmdid}/{repoid}
@@ -153,30 +153,30 @@ POST /rest/api/1/command/add-command-rel-for-repository/{cmdid}/{repoid}
 #### Responses
 
 
-##### <span id="add-command-rel-for-repository-command-200"></span> 200 - successfully added relationship
+##### 200 - successfully added relationship
 Status: OK
 
-###### <span id="add-command-rel-for-repository-command-200-schema"></span> Schema
+###### Schema
 
-##### <span id="add-command-rel-for-repository-command-400"></span> 400 - invalid ids or repositroy not found
+##### 400 - invalid ids or repositroy not found
 Status: Bad Request
 
-###### <span id="add-command-rel-for-repository-command-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="add-command-rel-for-repository-command-500"></span> 500 - failed to add relationship
+##### 500 - failed to add relationship
 Status: Internal Server Error
 
-###### <span id="add-command-rel-for-repository-command-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="create-api-key"></span> Creates an api key pair for a given user. (*createApiKey*)
+### Creates an api key pair for a given user. (*createApiKey*)
 
 ```
 POST /rest/api/1/user/apikey/generate/{name}
@@ -201,34 +201,34 @@ POST /rest/api/1/user/apikey/generate/{name}
 #### Responses
 
 
-##### <span id="create-api-key-200"></span> 200 - the generated api key pair
+##### 200 - the generated api key pair
 Status: OK
 
-###### <span id="create-api-key-200-schema"></span> Schema
+###### Schema
 
 
 
 [APIKey](#api-key)
 
-##### <span id="create-api-key-400"></span> 400 - failed to generate unique key or value
+##### 400 - failed to generate unique key or value
 Status: Bad Request
 
-###### <span id="create-api-key-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="create-api-key-500"></span> 500 - when failed to get user context
+##### 500 - when failed to get user context
 Status: Internal Server Error
 
-###### <span id="create-api-key-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="create-repository"></span> create repository (*createRepository*)
+### create repository (*createRepository*)
 
 ```
 POST /rest/api/1/repository
@@ -258,34 +258,34 @@ Creates a new repository
 #### Responses
 
 
-##### <span id="create-repository-200"></span> 200 - the created repository
+##### 200 - the created repository
 Status: OK
 
-###### <span id="create-repository-200-schema"></span> Schema
+###### Schema
 
 
 
 [Repository](#repository)
 
-##### <span id="create-repository-400"></span> 400 - failed to generate unique key or value
+##### 400 - failed to generate unique key or value
 Status: Bad Request
 
-###### <span id="create-repository-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="create-repository-500"></span> 500 - when failed to get user context
+##### 500 - when failed to get user context
 Status: Internal Server Error
 
-###### <span id="create-repository-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="create-secret"></span> Create a new secure secret. (*createSecret*)
+### Create a new secure secret. (*createSecret*)
 
 ```
 POST /rest/api/1/vault/secret
@@ -310,30 +310,30 @@ POST /rest/api/1/vault/secret
 #### Responses
 
 
-##### <span id="create-secret-200"></span> 200 - OK setting successfully create
+##### 200 - OK setting successfully create
 Status: OK
 
-###### <span id="create-secret-200-schema"></span> Schema
+###### Schema
 
-##### <span id="create-secret-400"></span> 400 - invalid json payload
+##### 400 - invalid json payload
 Status: Bad Request
 
-###### <span id="create-secret-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="create-secret-500"></span> 500 - failed to create secret
+##### 500 - failed to create secret
 Status: Internal Server Error
 
-###### <span id="create-secret-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="create-user"></span> create user (*createUser*)
+### create user (*createUser*)
 
 ```
 POST /rest/api/1/user
@@ -363,34 +363,34 @@ Creates a new user
 #### Responses
 
 
-##### <span id="create-user-200"></span> 200 - the created user
+##### 200 - the created user
 Status: OK
 
-###### <span id="create-user-200-schema"></span> Schema
+###### Schema
 
 
 
 [User](#user)
 
-##### <span id="create-user-400"></span> 400 - invalid json payload
+##### 400 - invalid json payload
 Status: Bad Request
 
-###### <span id="create-user-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="create-user-500"></span> 500 - failed to create user or generating a new api key
+##### 500 - failed to create user or generating a new api key
 Status: Internal Server Error
 
-###### <span id="create-user-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="create-vcs-token"></span> Create a new token for a platform like Github, Gitlab, Gitea... (*createVcsToken*)
+### Create a new token for a platform like Github, Gitlab, Gitea... (*createVcsToken*)
 
 ```
 POST /rest/api/1/vcs-token
@@ -415,30 +415,30 @@ POST /rest/api/1/vcs-token
 #### Responses
 
 
-##### <span id="create-vcs-token-200"></span> 200 - OK setting successfully create
+##### 200 - OK setting successfully create
 Status: OK
 
-###### <span id="create-vcs-token-200-schema"></span> Schema
+###### Schema
 
-##### <span id="create-vcs-token-400"></span> 400 - invalid json payload
+##### 400 - invalid json payload
 Status: Bad Request
 
-###### <span id="create-vcs-token-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="create-vcs-token-500"></span> 500 - failed to create secret
+##### 500 - failed to create secret
 Status: Internal Server Error
 
-###### <span id="create-vcs-token-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="delete-api-key"></span> Deletes a set of api keys for a given user with a given id. (*deleteApiKey*)
+### Deletes a set of api keys for a given user with a given id. (*deleteApiKey*)
 
 ```
 DELETE /rest/api/1/user/apikey/delete/{keyid}
@@ -460,30 +460,30 @@ DELETE /rest/api/1/user/apikey/delete/{keyid}
 #### Responses
 
 
-##### <span id="delete-api-key-200"></span> 200 - OK in case the deletion was successful
+##### 200 - OK in case the deletion was successful
 Status: OK
 
-###### <span id="delete-api-key-200-schema"></span> Schema
+###### Schema
 
-##### <span id="delete-api-key-400"></span> 400 - in case of missing user context or invalid ID
+##### 400 - in case of missing user context or invalid ID
 Status: Bad Request
 
-###### <span id="delete-api-key-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="delete-api-key-500"></span> 500 - when the deletion operation failed
+##### 500 - when the deletion operation failed
 Status: Internal Server Error
 
-###### <span id="delete-api-key-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="delete-command"></span> Deletes given command. (*deleteCommand*)
+### Deletes given command. (*deleteCommand*)
 
 ```
 DELETE /rest/api/1/command/{id}
@@ -505,30 +505,30 @@ DELETE /rest/api/1/command/{id}
 #### Responses
 
 
-##### <span id="delete-command-200"></span> 200 - OK in case the deletion was successful
+##### 200 - OK in case the deletion was successful
 Status: OK
 
-###### <span id="delete-command-200-schema"></span> Schema
+###### Schema
 
-##### <span id="delete-command-400"></span> 400 - in case of missing user context or invalid ID
+##### 400 - in case of missing user context or invalid ID
 Status: Bad Request
 
-###### <span id="delete-command-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="delete-command-500"></span> 500 - when the deletion operation failed
+##### 500 - when the deletion operation failed
 Status: Internal Server Error
 
-###### <span id="delete-command-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="delete-command-setting"></span> Deletes a given command setting. (*deleteCommandSetting*)
+### Deletes a given command setting. (*deleteCommandSetting*)
 
 ```
 DELETE /rest/api/1/command/settings/{id}
@@ -551,39 +551,39 @@ DELETE /rest/api/1/command/settings/{id}
 #### Responses
 
 
-##### <span id="delete-command-setting-200"></span> 200 - OK in case the deletion was successful
+##### 200 - OK in case the deletion was successful
 Status: OK
 
-###### <span id="delete-command-setting-200-schema"></span> Schema
+###### Schema
 
-##### <span id="delete-command-setting-400"></span> 400 - invalid id
+##### 400 - invalid id
 Status: Bad Request
 
-###### <span id="delete-command-setting-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="delete-command-setting-404"></span> 404 - command setting not found
+##### 404 - command setting not found
 Status: Not Found
 
-###### <span id="delete-command-setting-404-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="delete-command-setting-500"></span> 500 - when the deletion operation failed
+##### 500 - when the deletion operation failed
 Status: Internal Server Error
 
-###### <span id="delete-command-setting-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="delete-repository"></span> Deletes the given repository. (*deleteRepository*)
+### Deletes the given repository. (*deleteRepository*)
 
 ```
 DELETE /rest/api/1/repository/{id}
@@ -606,39 +606,39 @@ DELETE /rest/api/1/repository/{id}
 #### Responses
 
 
-##### <span id="delete-repository-200"></span> 200 - OK in case the deletion was successful
+##### 200 - OK in case the deletion was successful
 Status: OK
 
-###### <span id="delete-repository-200-schema"></span> Schema
+###### Schema
 
-##### <span id="delete-repository-400"></span> 400 - in case of missing user context or invalid ID
+##### 400 - in case of missing user context or invalid ID
 Status: Bad Request
 
-###### <span id="delete-repository-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="delete-repository-404"></span> 404 - in case of repository not found
+##### 404 - in case of repository not found
 Status: Not Found
 
-###### <span id="delete-repository-404-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="delete-repository-500"></span> 500 - when the deletion operation failed
+##### 500 - when the deletion operation failed
 Status: Internal Server Error
 
-###### <span id="delete-repository-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="delete-secret"></span> Deletes the given secret. (*deleteSecret*)
+### Deletes the given secret. (*deleteSecret*)
 
 ```
 DELETE /rest/api/1/vault/secret/{name}
@@ -661,39 +661,39 @@ DELETE /rest/api/1/vault/secret/{name}
 #### Responses
 
 
-##### <span id="delete-secret-200"></span> 200 - OK in case the deletion was successful
+##### 200 - OK in case the deletion was successful
 Status: OK
 
-###### <span id="delete-secret-200-schema"></span> Schema
+###### Schema
 
-##### <span id="delete-secret-400"></span> 400 - in case of missing name
+##### 400 - in case of missing name
 Status: Bad Request
 
-###### <span id="delete-secret-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="delete-secret-404"></span> 404 - in case the secret was not found
+##### 404 - in case the secret was not found
 Status: Not Found
 
-###### <span id="delete-secret-404-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="delete-secret-500"></span> 500 - when the deletion operation failed
+##### 500 - when the deletion operation failed
 Status: Internal Server Error
 
-###### <span id="delete-secret-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="delete-user"></span> Deletes the given user. (*deleteUser*)
+### Deletes the given user. (*deleteUser*)
 
 ```
 DELETE /rest/api/1/user/{id}
@@ -716,39 +716,39 @@ DELETE /rest/api/1/user/{id}
 #### Responses
 
 
-##### <span id="delete-user-200"></span> 200 - OK in case the deletion was successful
+##### 200 - OK in case the deletion was successful
 Status: OK
 
-###### <span id="delete-user-200-schema"></span> Schema
+###### Schema
 
-##### <span id="delete-user-400"></span> 400 - in case of missing user context or invalid ID
+##### 400 - in case of missing user context or invalid ID
 Status: Bad Request
 
-###### <span id="delete-user-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="delete-user-404"></span> 404 - in case of user not found
+##### 404 - in case of user not found
 Status: Not Found
 
-###### <span id="delete-user-404-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="delete-user-500"></span> 500 - when the deletion operation failed
+##### 500 - when the deletion operation failed
 Status: Internal Server Error
 
-###### <span id="delete-user-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="get-api-keys"></span> Returns a given api key. (*getApiKeys*)
+### Returns a given api key. (*getApiKeys*)
 
 ```
 GET /rest/api/1/user/apikey/{keyid}
@@ -772,25 +772,25 @@ GET /rest/api/1/user/apikey/{keyid}
 #### Responses
 
 
-##### <span id="get-api-keys-200"></span> 200
+##### 200
 Status: OK
 
-###### <span id="get-api-keys-200-schema"></span> Schema
+###### Schema
 
 
 
 [APIKey](#api-key)
 
-##### <span id="get-api-keys-500"></span> 500 - failed to get user context
+##### 500 - failed to get user context
 Status: Internal Server Error
 
-###### <span id="get-api-keys-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="get-command"></span> Returns a specific command. (*getCommand*)
+### Returns a specific command. (*getCommand*)
 
 ```
 GET /rest/api/1/command/{id}
@@ -815,34 +815,34 @@ GET /rest/api/1/command/{id}
 #### Responses
 
 
-##### <span id="get-command-200"></span> 200
+##### 200
 Status: OK
 
-###### <span id="get-command-200-schema"></span> Schema
+###### Schema
 
 
 
 [Command](#command)
 
-##### <span id="get-command-400"></span> 400 - invalid command id
+##### 400 - invalid command id
 Status: Bad Request
 
-###### <span id="get-command-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="get-command-500"></span> 500 - failed to get user context
+##### 500 - failed to get user context
 Status: Internal Server Error
 
-###### <span id="get-command-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="get-command-run"></span> Returns details about a command run. (*getCommandRun*)
+### Returns details about a command run. (*getCommandRun*)
 
 ```
 GET /rest/api/1/command/run/{id}
@@ -868,39 +868,39 @@ GET /rest/api/1/command/run/{id}
 #### Responses
 
 
-##### <span id="get-command-run-200"></span> 200
+##### 200
 Status: OK
 
-###### <span id="get-command-run-200-schema"></span> Schema
+###### Schema
 
 
 
 [CommandRun](#command-run)
 
-##### <span id="get-command-run-400"></span> 400 - invalid command id
+##### 400 - invalid command id
 Status: Bad Request
 
-###### <span id="get-command-run-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="get-command-run-404"></span> 404 - command run not found
+##### 404 - command run not found
 Status: Not Found
 
-###### <span id="get-command-run-404-schema"></span> Schema
+###### Schema
 
-##### <span id="get-command-run-500"></span> 500 - failed to get command run
+##### 500 - failed to get command run
 Status: Internal Server Error
 
-###### <span id="get-command-run-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="get-command-setting"></span> Get a specific setting. (*getCommandSetting*)
+### Get a specific setting. (*getCommandSetting*)
 
 ```
 GET /rest/api/1/command/settings/{id}
@@ -926,43 +926,43 @@ GET /rest/api/1/command/settings/{id}
 #### Responses
 
 
-##### <span id="get-command-setting-200"></span> 200
+##### 200
 Status: OK
 
-###### <span id="get-command-setting-200-schema"></span> Schema
+###### Schema
 
 
 
 [CommandSetting](#command-setting)
 
-##### <span id="get-command-setting-400"></span> 400 - invalid command id
+##### 400 - invalid command id
 Status: Bad Request
 
-###### <span id="get-command-setting-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="get-command-setting-404"></span> 404 - command setting not found
+##### 404 - command setting not found
 Status: Not Found
 
-###### <span id="get-command-setting-404-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="get-command-setting-500"></span> 500 - failed to get command setting
+##### 500 - failed to get command setting
 Status: Internal Server Error
 
-###### <span id="get-command-setting-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="get-event"></span> Get a specific event. (*getEvent*)
+### Get a specific event. (*getEvent*)
 
 ```
 GET /rest/api/1/event/{id}
@@ -988,43 +988,43 @@ GET /rest/api/1/event/{id}
 #### Responses
 
 
-##### <span id="get-event-200"></span> 200
+##### 200
 Status: OK
 
-###### <span id="get-event-200-schema"></span> Schema
+###### Schema
 
 
 
 [Event](#event)
 
-##### <span id="get-event-400"></span> 400 - invalid event id
+##### 400 - invalid event id
 Status: Bad Request
 
-###### <span id="get-event-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="get-event-404"></span> 404 - event not found
+##### 404 - event not found
 Status: Not Found
 
-###### <span id="get-event-404-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="get-event-500"></span> 500 - failed to get event
+##### 500 - failed to get event
 Status: Internal Server Error
 
-###### <span id="get-event-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="get-repository"></span> Gets the repository with the corresponding ID. (*getRepository*)
+### Gets the repository with the corresponding ID. (*getRepository*)
 
 ```
 GET /rest/api/1/repository/{id}
@@ -1050,43 +1050,43 @@ GET /rest/api/1/repository/{id}
 #### Responses
 
 
-##### <span id="get-repository-200"></span> 200
+##### 200
 Status: OK
 
-###### <span id="get-repository-200-schema"></span> Schema
+###### Schema
 
 
 
 [Repository](#repository)
 
-##### <span id="get-repository-400"></span> 400 - invalid repository id
+##### 400 - invalid repository id
 Status: Bad Request
 
-###### <span id="get-repository-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="get-repository-404"></span> 404 - repository not found
+##### 404 - repository not found
 Status: Not Found
 
-###### <span id="get-repository-404-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="get-repository-500"></span> 500 - failed to get repository
+##### 500 - failed to get repository
 Status: Internal Server Error
 
-###### <span id="get-repository-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="get-secret"></span> Get a specific secret. (*getSecret*)
+### Get a specific secret. (*getSecret*)
 
 ```
 GET /rest/api/1/vault/secret/{name}
@@ -1112,43 +1112,43 @@ GET /rest/api/1/vault/secret/{name}
 #### Responses
 
 
-##### <span id="get-secret-200"></span> 200
+##### 200
 Status: OK
 
-###### <span id="get-secret-200-schema"></span> Schema
+###### Schema
 
 
 
 [VaultSetting](#vault-setting)
 
-##### <span id="get-secret-400"></span> 400 - invalid name
+##### 400 - invalid name
 Status: Bad Request
 
-###### <span id="get-secret-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="get-secret-404"></span> 404 - secret not found
+##### 404 - secret not found
 Status: Not Found
 
-###### <span id="get-secret-404-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="get-secret-500"></span> 500 - failed to load secrets
+##### 500 - failed to load secrets
 Status: Internal Server Error
 
-###### <span id="get-secret-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="get-token"></span> Creates a JWT token for a given api key pair. (*getToken*)
+### Creates a JWT token for a given api key pair. (*getToken*)
 
 ```
 POST /rest/api/1/get-token
@@ -1166,21 +1166,21 @@ POST /rest/api/1/get-token
 #### Responses
 
 
-##### <span id="get-token-200"></span> 200 - the generated JWT token
+##### 200 - the generated JWT token
 Status: OK
 
-###### <span id="get-token-200-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="get-token-500"></span> 500 - when there was a problem with matching the email, or the api key or generating the token
+##### 500 - when there was a problem with matching the email, or the api key or generating the token
 Status: Internal Server Error
 
-###### <span id="get-token-500-schema"></span> Schema
+###### Schema
 
-### <span id="get-user"></span> Gets the user with the corresponding ID. (*getUser*)
+### Gets the user with the corresponding ID. (*getUser*)
 
 ```
 GET /rest/api/1/user/{id}
@@ -1206,43 +1206,43 @@ GET /rest/api/1/user/{id}
 #### Responses
 
 
-##### <span id="get-user-200"></span> 200
+##### 200
 Status: OK
 
-###### <span id="get-user-200-schema"></span> Schema
+###### Schema
 
 
 
 [User](#user)
 
-##### <span id="get-user-400"></span> 400 - invalid user id
+##### 400 - invalid user id
 Status: Bad Request
 
-###### <span id="get-user-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="get-user-404"></span> 404 - user not found
+##### 404 - user not found
 Status: Not Found
 
-###### <span id="get-user-404-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="get-user-500"></span> 500 - failed to get user
+##### 500 - failed to get user
 Status: Internal Server Error
 
-###### <span id="get-user-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="hook-handler"></span> Handle the hooks created by the platform. (*hookHandler*)
+### Handle the hooks created by the platform. (*hookHandler*)
 
 ```
 POST /rest/api/1/hooks/{rid}/{vid}/callback
@@ -1268,22 +1268,22 @@ POST /rest/api/1/hooks/{rid}/{vid}/callback
 #### Responses
 
 
-##### <span id="hook-handler-200"></span> 200 - success in case the hook event was processed without problems
+##### 200 - success in case the hook event was processed without problems
 Status: OK
 
-###### <span id="hook-handler-200-schema"></span> Schema
+###### Schema
 
-##### <span id="hook-handler-400"></span> 400 - for invalid parameters
+##### 400 - for invalid parameters
 Status: Bad Request
 
-###### <span id="hook-handler-400-schema"></span> Schema
+###### Schema
 
-##### <span id="hook-handler-404"></span> 404 - if the repository or the provider does not exist
+##### 404 - if the repository or the provider does not exist
 Status: Not Found
 
-###### <span id="hook-handler-404-schema"></span> Schema
+###### Schema
 
-### <span id="list-api-keys"></span> Lists all api keys for a given user. (*listApiKeys*)
+### Lists all api keys for a given user. (*listApiKeys*)
 
 ```
 POST /rest/api/1/user/apikey
@@ -1301,25 +1301,25 @@ POST /rest/api/1/user/apikey
 #### Responses
 
 
-##### <span id="list-api-keys-200"></span> 200
+##### 200
 Status: OK
 
-###### <span id="list-api-keys-200-schema"></span> Schema
+###### Schema
 
 
 
 [][APIKey](#api-key)
 
-##### <span id="list-api-keys-500"></span> 500 - failed to get user context
+##### 500 - failed to get user context
 Status: Internal Server Error
 
-###### <span id="list-api-keys-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="list-command-settings"></span> List settings for a command. (*listCommandSettings*)
+### List settings for a command. (*listCommandSettings*)
 
 ```
 POST /rest/api/1/command/{id}/settings
@@ -1344,34 +1344,34 @@ POST /rest/api/1/command/{id}/settings
 #### Responses
 
 
-##### <span id="list-command-settings-200"></span> 200
+##### 200
 Status: OK
 
-###### <span id="list-command-settings-200-schema"></span> Schema
+###### Schema
 
 
 
 [][CommandSetting](#command-setting)
 
-##### <span id="list-command-settings-400"></span> 400 - invalid id
+##### 400 - invalid id
 Status: Bad Request
 
-###### <span id="list-command-settings-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="list-command-settings-500"></span> 500 - failed to list settings
+##### 500 - failed to list settings
 Status: Internal Server Error
 
-###### <span id="list-command-settings-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="list-commands"></span> list commands (*listCommands*)
+### list commands (*listCommands*)
 
 ```
 POST /rest/api/1/commands
@@ -1397,25 +1397,25 @@ List commands
 #### Responses
 
 
-##### <span id="list-commands-200"></span> 200
+##### 200
 Status: OK
 
-###### <span id="list-commands-200-schema"></span> Schema
+###### Schema
 
 
 
 [][Command](#command)
 
-##### <span id="list-commands-500"></span> 500 - failed to get user context
+##### 500 - failed to get user context
 Status: Internal Server Error
 
-###### <span id="list-commands-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="list-events"></span> List events for a repository. (*listEvents*)
+### List events for a repository. (*listEvents*)
 
 ```
 POST /rest/api/1/events/{repoid}
@@ -1440,34 +1440,34 @@ POST /rest/api/1/events/{repoid}
 #### Responses
 
 
-##### <span id="list-events-200"></span> 200
+##### 200
 Status: OK
 
-###### <span id="list-events-200-schema"></span> Schema
+###### Schema
 
 
 
 [][Event](#event)
 
-##### <span id="list-events-400"></span> 400 - invalid repository id
+##### 400 - invalid repository id
 Status: Bad Request
 
-###### <span id="list-events-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="list-events-500"></span> 500 - failed to list events
+##### 500 - failed to list events
 Status: Internal Server Error
 
-###### <span id="list-events-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="list-repositories"></span> list repositories (*listRepositories*)
+### list repositories (*listRepositories*)
 
 ```
 POST /rest/api/1/repositories
@@ -1496,25 +1496,25 @@ List repositories
 #### Responses
 
 
-##### <span id="list-repositories-200"></span> 200
+##### 200
 Status: OK
 
-###### <span id="list-repositories-200-schema"></span> Schema
+###### Schema
 
 
 
 [][Repository](#repository)
 
-##### <span id="list-repositories-500"></span> 500 - failed to list repositories
+##### 500 - failed to list repositories
 Status: Internal Server Error
 
-###### <span id="list-repositories-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="list-secrets"></span> List all settings without the values. (*listSecrets*)
+### List all settings without the values. (*listSecrets*)
 
 ```
 POST /rest/api/1/vault/secrets
@@ -1532,25 +1532,25 @@ POST /rest/api/1/vault/secrets
 #### Responses
 
 
-##### <span id="list-secrets-200"></span> 200
+##### 200
 Status: OK
 
-###### <span id="list-secrets-200-schema"></span> Schema
+###### Schema
 
 
 
 [][VaultSetting](#vault-setting)
 
-##### <span id="list-secrets-500"></span> 500 - failed to load secrets
+##### 500 - failed to load secrets
 Status: Internal Server Error
 
-###### <span id="list-secrets-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="list-supported-platforms"></span> Lists all supported platforms. (*listSupportedPlatforms*)
+### Lists all supported platforms. (*listSupportedPlatforms*)
 
 ```
 GET /rest/api/1/supported-platforms
@@ -1567,16 +1567,16 @@ GET /rest/api/1/supported-platforms
 #### Responses
 
 
-##### <span id="list-supported-platforms-200"></span> 200 - the list of supported platform ids
+##### 200 - the list of supported platform ids
 Status: OK
 
-###### <span id="list-supported-platforms-200-schema"></span> Schema
+###### Schema
 
 
 
 [][Platform](#platform)
 
-### <span id="list-users"></span> list users (*listUsers*)
+### list users (*listUsers*)
 
 ```
 POST /rest/api/1/users
@@ -1596,25 +1596,25 @@ List users
 #### Responses
 
 
-##### <span id="list-users-200"></span> 200
+##### 200
 Status: OK
 
-###### <span id="list-users-200-schema"></span> Schema
+###### Schema
 
 
 
 [][User](#user)
 
-##### <span id="list-users-500"></span> 500 - failed to list user
+##### 500 - failed to list user
 Status: Internal Server Error
 
-###### <span id="list-users-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="refresh-token"></span> Refresh the authentication token. (*refreshToken*)
+### Refresh the authentication token. (*refreshToken*)
 
 ```
 POST /rest/api/1/auth/refresh
@@ -1629,17 +1629,17 @@ POST /rest/api/1/auth/refresh
 #### Responses
 
 
-##### <span id="refresh-token-200"></span> 200 - Status OK
+##### 200 - Status OK
 Status: OK
 
-###### <span id="refresh-token-200-schema"></span> Schema
+###### Schema
 
-##### <span id="refresh-token-401"></span> 401 - refresh token cookie not found|error refreshing token
+##### 401 - refresh token cookie not found|error refreshing token
 Status: Unauthorized
 
-###### <span id="refresh-token-401-schema"></span> Schema
+###### Schema
 
-### <span id="remove-command-rel-for-platform-command"></span> Remove a relationship to a platform. This command will no longer be running for that platform events. (*removeCommandRelForPlatformCommand*)
+### Remove a relationship to a platform. This command will no longer be running for that platform events. (*removeCommandRelForPlatformCommand*)
 
 ```
 POST /rest/api/1/command/remove-command-rel-for-platform/{cmdid}/{repoid}
@@ -1662,30 +1662,30 @@ POST /rest/api/1/command/remove-command-rel-for-platform/{cmdid}/{repoid}
 #### Responses
 
 
-##### <span id="remove-command-rel-for-platform-command-200"></span> 200 - successfully removed relationship
+##### 200 - successfully removed relationship
 Status: OK
 
-###### <span id="remove-command-rel-for-platform-command-200-schema"></span> Schema
+###### Schema
 
-##### <span id="remove-command-rel-for-platform-command-400"></span> 400 - invalid ids or platform not found
+##### 400 - invalid ids or platform not found
 Status: Bad Request
 
-###### <span id="remove-command-rel-for-platform-command-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="remove-command-rel-for-platform-command-500"></span> 500 - failed to add relationship
+##### 500 - failed to add relationship
 Status: Internal Server Error
 
-###### <span id="remove-command-rel-for-platform-command-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="remove-command-rel-for-repository-command"></span> Remove a relationship to a repository. This command will no longer be running for that repository events. (*removeCommandRelForRepositoryCommand*)
+### Remove a relationship to a repository. This command will no longer be running for that repository events. (*removeCommandRelForRepositoryCommand*)
 
 ```
 POST /rest/api/1/command/remove-command-rel-for-repository/{cmdid}/{repoid}
@@ -1708,30 +1708,30 @@ POST /rest/api/1/command/remove-command-rel-for-repository/{cmdid}/{repoid}
 #### Responses
 
 
-##### <span id="remove-command-rel-for-repository-command-200"></span> 200 - successfully removed relationship
+##### 200 - successfully removed relationship
 Status: OK
 
-###### <span id="remove-command-rel-for-repository-command-200-schema"></span> Schema
+###### Schema
 
-##### <span id="remove-command-rel-for-repository-command-400"></span> 400 - invalid ids or repositroy not found
+##### 400 - invalid ids or repositroy not found
 Status: Bad Request
 
-###### <span id="remove-command-rel-for-repository-command-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="remove-command-rel-for-repository-command-500"></span> 500 - failed to add relationship
+##### 500 - failed to add relationship
 Status: Internal Server Error
 
-###### <span id="remove-command-rel-for-repository-command-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="update-command"></span> Updates a given command. (*updateCommand*)
+### Updates a given command. (*updateCommand*)
 
 ```
 POST /rest/api/1/command/update
@@ -1759,34 +1759,34 @@ POST /rest/api/1/command/update
 #### Responses
 
 
-##### <span id="update-command-200"></span> 200 - successfully updated command
+##### 200 - successfully updated command
 Status: OK
 
-###### <span id="update-command-200-schema"></span> Schema
+###### Schema
 
 
 
 [Command](#command)
 
-##### <span id="update-command-400"></span> 400 - binding error
+##### 400 - binding error
 Status: Bad Request
 
-###### <span id="update-command-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="update-command-500"></span> 500 - failed to update the command
+##### 500 - failed to update the command
 Status: Internal Server Error
 
-###### <span id="update-command-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="update-command-setting"></span> Create a new command setting. (*updateCommandSetting*)
+### Create a new command setting. (*updateCommandSetting*)
 
 ```
 POST /rest/api/1/command/settings/update
@@ -1811,30 +1811,30 @@ POST /rest/api/1/command/settings/update
 #### Responses
 
 
-##### <span id="update-command-setting-200"></span> 200 - successfully created command setting
+##### 200 - successfully created command setting
 Status: OK
 
-###### <span id="update-command-setting-200-schema"></span> Schema
+###### Schema
 
-##### <span id="update-command-setting-400"></span> 400 - binding error
+##### 400 - binding error
 Status: Bad Request
 
-###### <span id="update-command-setting-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="update-command-setting-500"></span> 500 - failed to create the command setting
+##### 500 - failed to create the command setting
 Status: Internal Server Error
 
-###### <span id="update-command-setting-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="update-repository"></span> Updates an existing repository. (*updateRepository*)
+### Updates an existing repository. (*updateRepository*)
 
 ```
 POST /rest/api/1/repository/update
@@ -1863,43 +1863,43 @@ POST /rest/api/1/repository/update
 #### Responses
 
 
-##### <span id="update-repository-200"></span> 200 - the updated repository
+##### 200 - the updated repository
 Status: OK
 
-###### <span id="update-repository-200-schema"></span> Schema
+###### Schema
 
 
 
 [Repository](#repository)
 
-##### <span id="update-repository-400"></span> 400 - failed to bind repository
+##### 400 - failed to bind repository
 Status: Bad Request
 
-###### <span id="update-repository-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="update-repository-404"></span> 404 - repository not found
+##### 404 - repository not found
 Status: Not Found
 
-###### <span id="update-repository-404-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="update-repository-500"></span> 500 - failed to update repository
+##### 500 - failed to update repository
 Status: Internal Server Error
 
-###### <span id="update-repository-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="update-secret"></span> Updates an existing secret. (*updateSecret*)
+### Updates an existing secret. (*updateSecret*)
 
 ```
 POST /rest/api/1/vault/secret/update
@@ -1925,39 +1925,39 @@ POST /rest/api/1/vault/secret/update
 #### Responses
 
 
-##### <span id="update-secret-200"></span> 200 - OK setting successfully updated
+##### 200 - OK setting successfully updated
 Status: OK
 
-###### <span id="update-secret-200-schema"></span> Schema
+###### Schema
 
-##### <span id="update-secret-400"></span> 400 - invalid json payload
+##### 400 - invalid json payload
 Status: Bad Request
 
-###### <span id="update-secret-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="update-secret-404"></span> 404 - setting not found
+##### 404 - setting not found
 Status: Not Found
 
-###### <span id="update-secret-404-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="update-secret-500"></span> 500 - failed to update secret
+##### 500 - failed to update secret
 Status: Internal Server Error
 
-###### <span id="update-secret-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="update-user"></span> Updates an existing user. (*updateUser*)
+### Updates an existing user. (*updateUser*)
 
 ```
 POST /rest/api/1/user/update
@@ -1986,43 +1986,43 @@ POST /rest/api/1/user/update
 #### Responses
 
 
-##### <span id="update-user-200"></span> 200 - user successfully updated
+##### 200 - user successfully updated
 Status: OK
 
-###### <span id="update-user-200-schema"></span> Schema
+###### Schema
 
 
 
 [User](#user)
 
-##### <span id="update-user-400"></span> 400 - invalid json payload
+##### 400 - invalid json payload
 Status: Bad Request
 
-###### <span id="update-user-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="update-user-404"></span> 404 - user not found
+##### 404 - user not found
 Status: Not Found
 
-###### <span id="update-user-404-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="update-user-500"></span> 500 - failed to update user
+##### 500 - failed to update user
 Status: Internal Server Error
 
-###### <span id="update-user-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="upload-command"></span> Upload a command. To set up anything for the command, like schedules etc, (*uploadCommand*)
+### Upload a command. To set up anything for the command, like schedules etc, (*uploadCommand*)
 
 ```
 POST /rest/api/1/command
@@ -2045,34 +2045,34 @@ new binary.
 #### Responses
 
 
-##### <span id="upload-command-201"></span> 201 - in case of successful file upload
+##### 201 - in case of successful file upload
 Status: Created
 
-###### <span id="upload-command-201-schema"></span> Schema
+###### Schema
 
 
 
 [Command](#command)
 
-##### <span id="upload-command-400"></span> 400 - invalid file format or command already exists
+##### 400 - invalid file format or command already exists
 Status: Bad Request
 
-###### <span id="upload-command-400-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-##### <span id="upload-command-500"></span> 500 - failed to upload file, create plugin, create command or copy operations
+##### 500 - failed to upload file, create plugin, create command or copy operations
 Status: Internal Server Error
 
-###### <span id="upload-command-500-schema"></span> Schema
+###### Schema
 
 
 
 any
 
-### <span id="user-callback"></span> This is the url to which Google calls back after a successful login. (*userCallback*)
+### This is the url to which Google calls back after a successful login. (*userCallback*)
 
 ```
 GET /rest/api/1/auth/callback
@@ -2097,22 +2097,22 @@ Creates a cookie which will hold the authenticated user.
 #### Responses
 
 
-##### <span id="user-callback-308"></span> 308 - the permanent redirect url
+##### 308 - the permanent redirect url
 Status: Permanent Redirect
 
-###### <span id="user-callback-308-schema"></span> Schema
+###### Schema
 
-##### <span id="user-callback-401"></span> 401 - error verifying state | error during token exchange
+##### 401 - error verifying state | error during token exchange
 Status: Unauthorized
 
-###### <span id="user-callback-401-schema"></span> Schema
+###### Schema
 
-##### <span id="user-callback-404"></span> 404 - error invalid state|code
+##### 404 - error invalid state|code
 Status: Not Found
 
-###### <span id="user-callback-404-schema"></span> Schema
+###### Schema
 
-### <span id="user-login"></span> User login. (*userLogin*)
+### User login. (*userLogin*)
 
 ```
 GET /rest/api/1/auth/login
@@ -2134,24 +2134,24 @@ GET /rest/api/1/auth/login
 #### Responses
 
 
-##### <span id="user-login-307"></span> 307 - the redirect url to the login
+##### 307 - the redirect url to the login
 Status: Temporary Redirect
 
-###### <span id="user-login-307-schema"></span> Schema
+###### Schema
 
-##### <span id="user-login-401"></span> 401 - error generating state
+##### 401 - error generating state
 Status: Unauthorized
 
-###### <span id="user-login-401-schema"></span> Schema
+###### Schema
 
-##### <span id="user-login-404"></span> 404 - error invalid redirect_url
+##### 404 - error invalid redirect_url
 Status: Not Found
 
-###### <span id="user-login-404-schema"></span> Schema
+###### Schema
 
 ## Models
 
-### <span id="api-key"></span> APIKey
+### APIKey
 
 
 
@@ -2172,7 +2172,7 @@ Status: Not Found
 
 
 
-### <span id="auth"></span> Auth
+### Auth
 
 
 
@@ -2190,7 +2190,7 @@ Status: Not Found
 
 
 
-### <span id="command"></span> Command
+### Command
 
 
 
@@ -2212,7 +2212,7 @@ Status: Not Found
 
 
 
-### <span id="command-run"></span> CommandRun
+### CommandRun
 
 
 > CommandRun is a single run of a command belonging to an event
@@ -2236,7 +2236,7 @@ including things like, state, event, and created at.
 
 
 
-### <span id="command-setting"></span> CommandSetting
+### CommandSetting
 
 
 
@@ -2255,7 +2255,7 @@ including things like, state, event, and created at.
 
 
 
-### <span id="event"></span> Event
+### Event
 
 
 > Event contains details about a platform event, such as
@@ -2281,7 +2281,7 @@ an ID is generated. |  |
 
 
 
-### <span id="git-lab"></span> GitLab
+### GitLab
 
 
 
@@ -2296,7 +2296,7 @@ an ID is generated. |  |
 
 
 
-### <span id="list-options"></span> ListOptions
+### ListOptions
 
 
 
@@ -2318,7 +2318,7 @@ required false | `10` |
 
 
 
-### <span id="platform"></span> Platform
+### Platform
 
 
 
@@ -2334,7 +2334,7 @@ required false | `10` |
 
 
 
-### <span id="repository"></span> Repository
+### Repository
 
 
 
@@ -2358,7 +2358,7 @@ details needs to be displayed. |  |
 
 
 
-### <span id="user"></span> User
+### User
 
 
 
@@ -2377,7 +2377,7 @@ details needs to be displayed. |  |
 
 
 
-### <span id="user-auth-details"></span> UserAuthDetails
+### UserAuthDetails
 
 
 
@@ -2394,7 +2394,7 @@ details needs to be displayed. |  |
 
 
 
-### <span id="v-c-s-token"></span> VCSToken
+### VCSToken
 
 
 
@@ -2410,7 +2410,7 @@ details needs to be displayed. |  |
 
 
 
-### <span id="vault-setting"></span> VaultSetting
+### VaultSetting
 
 
 > VaultSetting defines a setting that comes from the vault
