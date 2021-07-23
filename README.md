@@ -22,3 +22,7 @@ make swagger && make swagger-docs
 ```
 
 Fix any errors which might occur then copy the content from `docs/swagger.md` to the API docs.
+
+Note, when writing the API docs, there is a bug where the swagger generates `# <span id="list-commands"></span>`
+in front of all entities for some reason. I opened a [ticket](https://github.com/go-swagger/go-swagger/issues/2612). For now, we just replace it.
+`s/# <span id=".*"></span>/#/g`.
