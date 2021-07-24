@@ -2309,9 +2309,7 @@ an ID is generated. |  |
 | EndDate | date-time (formatted string)| `strfmt.DateTime` |  | | EndDate defines a date of end to look for events. Not Inclusive. | `2021-02-03` |
 | Name | string| `string` |  | | Name of the context for which this option is used. | `\"partialNameOfACommand\` |
 | Page | int64 (formatted integer)| `int64` |  | | Current Page | `0` |
-| PageSize | int64 (formatted integer)| `int64` |  | | Items per Page
-
-required false | `10` |
+| PageSize | int64 (formatted integer)| `int64` |  | | Items per Page | `10` |
 | StartingDate | date-time (formatted string)| `strfmt.DateTime` |  | | StartingDate defines a date of start to look for events. Inclusive. | `2021-02-02` |
 | VCS | int64 (formatted integer)| `int64` |  | | Only list all entries for a given platform ID. | `1` |
 
