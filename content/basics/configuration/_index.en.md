@@ -32,7 +32,7 @@ Flags:
       --google-client-secret string           --google-client-secret my-client-secret}
   -h, --help                                  help for krok
       --hookbase string                       --hookbase localhost (default "localhost")
-      --hostname string                       --hostname localhost:9998 (default "localhost:9998")
+      --hostname string                       --hostname 0.0.0.0:9998 (default "0.0.0.0:9998")
       --plugin-location string                --plugin-location /tmp/krok/plugins (default "/tmp/krok/plugins")
       --proto string                          --proto http (default "http")
       --server-crt-path string                --server-crt-path /home/user/.server/server.crt
