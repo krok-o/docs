@@ -1,10 +1,3 @@
----
-title: API reference
-weight: 5
-pre: "<b>1. </b>"
-chapter: false
----
-
 # Krok
 Documentation of the Krok API.
 
@@ -39,6 +32,7 @@ Documentation of the Krok API.
 | POST | /rest/api/1/command/add-command-rel-for-platform/{cmdid}/{repoid} | [add command rel for platform command](#add-command-rel-for-platform-command) | Adds a connection to a platform for a command. Defines what platform a command supports. These commands will only be able to run for those platforms. |
 | POST | /rest/api/1/command/add-command-rel-for-repository/{cmdid}/{repoid} | [add command rel for repository command](#add-command-rel-for-repository-command) | Add a connection to a repository. This will make this command to be executed for events for that repository. |
 | POST | /rest/api/1/user/apikey/generate/{name} | [create Api key](#create-api-key) | Creates an api key pair for a given user. |
+| POST | /rest/api/1/command | [create command](#create-command) |  |
 | POST | /rest/api/1/repository | [create repository](#create-repository) |  |
 | POST | /rest/api/1/vault/secret | [create secret](#create-secret) | Create a new secure secret. |
 | POST | /rest/api/1/user | [create user](#create-user) |  |
@@ -75,7 +69,6 @@ Documentation of the Krok API.
 | POST | /rest/api/1/repository/update | [update repository](#update-repository) | Updates an existing repository. |
 | POST | /rest/api/1/vault/secret/update | [update secret](#update-secret) | Updates an existing secret. |
 | POST | /rest/api/1/user/update | [update user](#update-user) | Updates an existing user. |
-| POST | /rest/api/1/command | [upload command](#upload-command) | Upload a command. To set up anything for the command, like schedules etc, |
 | GET | /rest/api/1/auth/callback | [user callback](#user-callback) | This is the url to which Google calls back after a successful login. |
 | GET | /rest/api/1/auth/login | [user login](#user-login) | User login. |
 
@@ -219,6 +212,64 @@ Status: Bad Request
 any
 
 ##### 500 - when failed to get user context
+Status: Internal Server Error
+
+###### Schema
+
+
+
+any
+
+### create command (*createCommand*)
+
+```
+POST /rest/api/1/command
+```
+
+Create a command. This endpoint supports settings up a command with
+various settings including a URL from which to download a command.
+
+#### Consumes
+  * application/json
+
+#### Produces
+  * application/json
+
+#### Parameters
+
+| Name | Source | Type | Go type | Separator | Required | Default | Description |
+|------|--------|------|---------|-----------| :------: |---------|-------------|
+| command | `body` | [Command](#command) | `models.Command` | | ✓ | |  |
+
+#### All responses
+| Code | Status | Description | Has headers | Schema |
+|------|--------|-------------|:-----------:|--------|
+| [201](#create-command-201) | Created | in case of successful create |  | [schema](#create-command-201-schema) |
+| [400](#create-command-400) | Bad Request | invalid file format or command already exists |  | [schema](#create-command-400-schema) |
+| [500](#create-command-500) | Internal Server Error | create command failed |  | [schema](#create-command-500-schema) |
+
+#### Responses
+
+
+##### 201 - in case of successful create
+Status: Created
+
+###### Schema
+
+
+
+[Command](#command)
+
+##### 400 - invalid file format or command already exists
+Status: Bad Request
+
+###### Schema
+
+
+
+any
+
+##### 500 - create command failed
 Status: Internal Server Error
 
 ###### Schema
@@ -1791,6 +1842,9 @@ any
 POST /rest/api/1/command/settings/update
 ```
 
+#### Consumes
+  * application/json
+
 #### Produces
   * application/json
 
@@ -2021,56 +2075,6 @@ Status: Internal Server Error
 
 any
 
-### Upload a command. To set up anything for the command, like schedules etc, (*uploadCommand*)
-
-```
-POST /rest/api/1/command
-```
-
-the command has to be edited. We don't support uploading the same thing twice.
-If the command binary needs to be updated, delete the command and upload the
-new binary.
-
-#### Produces
-  * application/json
-
-#### All responses
-| Code | Status | Description | Has headers | Schema |
-|------|--------|-------------|:-----------:|--------|
-| [201](#upload-command-201) | Created | in case of successful file upload |  | [schema](#upload-command-201-schema) |
-| [400](#upload-command-400) | Bad Request | invalid file format or command already exists |  | [schema](#upload-command-400-schema) |
-| [500](#upload-command-500) | Internal Server Error | failed to upload file, create plugin, create command or copy operations |  | [schema](#upload-command-500-schema) |
-
-#### Responses
-
-
-##### 201 - in case of successful file upload
-Status: Created
-
-###### Schema
-
-
-
-[Command](#command)
-
-##### 400 - invalid file format or command already exists
-Status: Bad Request
-
-###### Schema
-
-
-
-any
-
-##### 500 - failed to upload file, create plugin, create command or copy operations
-Status: Internal Server Error
-
-###### Schema
-
-
-
-any
-
 ### This is the url to which Google calls back after a successful login. (*userCallback*)
 
 ```
@@ -2201,11 +2205,12 @@ Status: Not Found
 | Name | Type | Go type | Required | Default | Description | Example |
 |------|------|---------|:--------:| ------- |-------------|---------|
 | Enabled | boolean| `bool` |  | | Enabled defines if this command can be executed or not. | `false` |
-| Filename | string| `string` | ✓ | | Filename is the name of the file which holds this command. | `my_awesome_command` |
-| Hash | string| `string` | ✓ | | Hash is the hash of the command file. |  |
 | ID | int64 (formatted integer)| `int64` | ✓ | | ID of the command. Generated. |  |
-| Location | string| `string` | ✓ | | Location is where this command is located at. This is the full path of the containing folder. | `/tmp/krok-commands` |
+| Image | string| `string` | ✓ | | Image defines the image name and tag of the command
+Note: At the moment, only docker is supported. Later, runc, containerd... | `krok-hook/slack-notification:v0.0.1` |
 | Name | string| `string` | ✓ | | Name of the command. |  |
+| Platforms | [][Platform](#platform)| `[]*Platform` |  | | Platforms holds all the platforms which this command supports.
+Calculated, not saved. |  |
 | Repositories | [][Repository](#repository)| `[]*Repository` |  | | Repositories that this command can execute on. |  |
 | Schedule | string| `string` |  | | Schedule of the command. | `0 * * * * // follows cron job syntax.` |
 
@@ -2231,7 +2236,7 @@ including things like, state, event, and created at.
 | EventID | int64 (formatted integer)| `int64` | ✓ | | EventID is the ID of the event that this run belongs to. |  |
 | ID | int64 (formatted integer)| `int64` | ✓ | | ID is a generatd identifier. |  |
 | Outcome | string| `string` |  | | Outcome is any output of the command. Stdout and stderr combined. |  |
-| Status | string| `string` | ✓ | | Status is the current state of the command run. | `running, failed, success` |
+| Status | string| `string` | ✓ | | Status is the current state of the command run. | `created, running, failed, success` |
 
 
 
@@ -2273,6 +2278,7 @@ the repository it belongs to and the event that created it...
 | CreateAt | date-time (formatted string)| `strfmt.DateTime` | ✓ | | CreatedAt contains the timestamp when this event occurred. |  |
 | EventID | string| `string` | ✓ | | EvenID is the ID of the corresponding event on the given platform. If that cannot be determined
 an ID is generated. |  |
+| EventType | string| `string` | ✓ | | EventType of the name, i.e.: push, ping, pull-request... |  |
 | ID | int64 (formatted integer)| `int64` | ✓ | | ID is a generated ID. |  |
 | Payload | string| `string` | ✓ | | Payload defines the information received from the platform for this event. |  |
 | RepositoryID | int64 (formatted integer)| `int64` | ✓ | | RepositoryID contains the ID of the repository for which this event occurred. |  |
@@ -2308,8 +2314,10 @@ an ID is generated. |  |
 |------|------|---------|:--------:| ------- |-------------|---------|
 | EndDate | date-time (formatted string)| `strfmt.DateTime` |  | | EndDate defines a date of end to look for events. Not Inclusive. | `2021-02-03` |
 | Name | string| `string` |  | | Name of the context for which this option is used. | `\"partialNameOfACommand\` |
-| Page | int64 (formatted integer)| `int64` |  | | Current Page | `0` |
-| PageSize | int64 (formatted integer)| `int64` |  | | Items per Page | `10` |
+| Page | int64 (formatted integer)| `int64` |  | | Page defines the current page. | `0` |
+| PageSize | int64 (formatted integer)| `int64` |  | | PageSize defines the number of items per page.
+
+required false | `10` |
 | StartingDate | date-time (formatted string)| `strfmt.DateTime` |  | | StartingDate defines a date of start to look for events. Inclusive. | `2021-02-02` |
 | VCS | int64 (formatted integer)| `int64` |  | | Only list all entries for a given platform ID. | `1` |
 

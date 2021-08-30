@@ -9,4 +9,6 @@ chapter: true
 
 # Tutorials
 
-Discover some usages and tutorials using Krok.
+Discover some usages and tutorials with Krok.
+
+## Adding Slack notification to all repositories
