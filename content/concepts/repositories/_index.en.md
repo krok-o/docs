@@ -34,7 +34,9 @@ What are these values?
 
 If everything is successful, looking at Github, should show as a successfully created webhook.
 
-{{% notice info %}} Krok responds to the Ping event on its own coming from Github. {{% /notice %}}
+{{% notice note %}}
+Krok responds to the Ping event on its own coming from Github.
+{{% /notice %}}
 
 Now, the repository on its own, doesn't really do much. We need [Commands](/commands) in order for it to be useful.
 
