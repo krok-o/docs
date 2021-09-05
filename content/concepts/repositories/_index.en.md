@@ -4,8 +4,6 @@ weight: 10
 chapter: false
 ---
 
-# Repositories
-
 Repositories are in a 1:1 match to hooks. What are repositories? The repositories on the various platforms that Krok supports.
 
 For example, a repository on Github. A repository is registered on Krok which then calls back to the platform and creates a webhook
@@ -38,9 +36,9 @@ If everything is successful, looking at Github, should show as a successfully cr
 
 {{% notice info %}} Krok responds to the Ping event on its own coming from Github. {{% /notice %}}
 
-Now, the repository on its own, doesn't really do much. We need [Commands](commands) in order for it to be useful.
+Now, the repository on its own, doesn't really do much. We need [Commands](/commands) in order for it to be useful.
 
-Once we have our command which we would like to run on each [Event](events) we create a relationship to that command for this repository.
+Once we have our command which we would like to run on each [Event](/events) we create a relationship to that command for this repository.
 
 Do that, run:
 
@@ -58,7 +56,7 @@ krokctl list commands
 ... which should show existing repositories and commands that have been created.
 
 Once the relationship exists, when an event happens, all of the associated commands will be executed. On details for what the commands
-will get, please follow the [Commands](commands) section of the documentation.
+will get, please follow the [Commands](/commands) section of the documentation.
 
 ## What is the point?
 
