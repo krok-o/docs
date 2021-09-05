@@ -7,7 +7,7 @@ weight: 20
 
 These are the currently configurable options for Krok:
 
-{{% notice info %}} Make sure to check out the [Release](https://github.com/krok-o/krok/releases) section of Krok for the latest built binaries for all supported platforms. {{% /notice %}}
+{{% notice note %}} Make sure to check out the [Release](https://github.com/krok-o/krok/releases) section of Krok for the latest built binaries for all supported platforms. {{% /notice %}}
 
 
 ```console

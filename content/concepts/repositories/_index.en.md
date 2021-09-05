@@ -22,6 +22,9 @@ First, register the repository:
 
 ```console
 krokctl create repository --events push --name test-repo-1 --secret secret --vcs 1 --url https://github.com/Skarlso/test
+8:18PM DBG Creating repository...
+ID      NAME            URL                             VCS     CALLBACK-URL                                                    ATTACHED-COMMANDS     PROJECT-ID
+1       test-repo-1     https://github.com/Skarlso/test 1       http://krok.app/rest/api/1/hooks/1/1/callback                   -                     -1
 ```
 
 What are these values?
