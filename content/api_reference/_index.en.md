@@ -7,7 +7,6 @@ chapter: true
 
 ### Chapter 1
 
-Being here to understand what Krok is and how to use it.
 # Krok
 Documentation of the Krok API.
 
