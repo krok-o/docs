@@ -1,6 +1,6 @@
 ---
 title: Concepts
-weight: 45
+weight: 15
 pre: "<b>3. </b>"
 chapter: true
 ---
