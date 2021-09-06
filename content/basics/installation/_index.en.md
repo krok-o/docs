@@ -1,6 +1,6 @@
 ---
 title: Installation
-weight: 15
+weight: 20
 ---
 
 Krok can be installed in a number of ways.

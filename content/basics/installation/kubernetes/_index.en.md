@@ -1,6 +1,6 @@
 ---
 title: Kubernetes
-weight: 20
+weight: 35
 ---
 
 Using Kubernetes.

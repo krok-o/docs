@@ -1,6 +1,6 @@
 ---
 title: Configuration
-weight: 20
+weight: 15
 ---
 
 ## Configuration options for the root command

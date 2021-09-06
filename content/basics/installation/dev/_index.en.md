@@ -1,6 +1,6 @@
 ---
 title: Development
-weight: 30
+weight: 25
 ---
 
 Building from source and using a test database.

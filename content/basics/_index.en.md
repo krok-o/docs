@@ -1,6 +1,6 @@
 ---
 title: Basics
-weight: 5
+weight: 10
 pre: "<b>2. </b>"
 chapter: true
 ---

@@ -1,6 +1,6 @@
 ---
 title: Docker
-weight: 25
+weight: 30
 ---
 
 Using Docker and docker-compose.
