@@ -1,0 +1,23 @@
+{
+  "unversionedId": "tutorial-operator/real-life-setup",
+  "id": "tutorial-operator/real-life-setup",
+  "title": "Real-world setup",
+  "description": "",
+  "source": "@site/docs/tutorial-operator/real-life-setup.md",
+  "sourceDirName": "tutorial-operator",
+  "slug": "/tutorial-operator/real-life-setup",
+  "permalink": "/docs/tutorial-operator/real-life-setup",
+  "draft": false,
+  "editUrl": "https://github.com/krok-o/docs/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-operator/real-life-setup.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Testing the operator with some basic commands",
+    "permalink": "/docs/tutorial-operator/testing-the-operator-with-some-basic-commands"
+  }
+}

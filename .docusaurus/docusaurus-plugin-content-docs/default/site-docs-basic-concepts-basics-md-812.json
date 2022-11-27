@@ -1,0 +1,27 @@
+{
+  "unversionedId": "basic-concepts/basics",
+  "id": "basic-concepts/basics",
+  "title": "Basic Concepts",
+  "description": "Here you find a description of Krok itself, what it does, and how it works in general terms.",
+  "source": "@site/docs/basic-concepts/basics.md",
+  "sourceDirName": "basic-concepts",
+  "slug": "/basic-concepts/basics",
+  "permalink": "/docs/basic-concepts/basics",
+  "draft": false,
+  "editUrl": "https://github.com/krok-o/docs/tree/main/packages/create-docusaurus/templates/shared/docs/basic-concepts/basics.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Basic Concepts",
+    "permalink": "/docs/category/basic-concepts"
+  },
+  "next": {
+    "title": "Repositories",
+    "permalink": "/docs/basic-concepts/repositories"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "basic-concepts/commands",
+  "id": "basic-concepts/commands",
+  "title": "Commands",
+  "description": "What are commands",
+  "source": "@site/docs/basic-concepts/commands.md",
+  "sourceDirName": "basic-concepts",
+  "slug": "/basic-concepts/commands",
+  "permalink": "/docs/basic-concepts/commands",
+  "draft": false,
+  "editUrl": "https://github.com/krok-o/docs/tree/main/packages/create-docusaurus/templates/shared/docs/basic-concepts/commands.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Repositories",
+    "permalink": "/docs/basic-concepts/repositories"
+  },
+  "next": {
+    "title": "Events",
+    "permalink": "/docs/basic-concepts/events"
+  }
+}

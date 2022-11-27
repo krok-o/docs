@@ -1,0 +1,16 @@
+{
+  "title": "Tutorial - Operator",
+  "description": "Introduction to using the Krok operator.",
+  "slug": "/category/tutorial---operator",
+  "permalink": "/docs/category/tutorial---operator",
+  "navigation": {
+    "previous": {
+      "title": "Installing operator",
+      "permalink": "/docs/installation-guide/operator-installation"
+    },
+    "next": {
+      "title": "Adding a new Repository",
+      "permalink": "/docs/tutorial-operator/adding-a-new-repositroy"
+    }
+  }
+}

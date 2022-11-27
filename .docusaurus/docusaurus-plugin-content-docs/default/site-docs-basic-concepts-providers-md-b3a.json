@@ -1,0 +1,27 @@
+{
+  "unversionedId": "basic-concepts/providers",
+  "id": "basic-concepts/providers",
+  "title": "Providers",
+  "description": "",
+  "source": "@site/docs/basic-concepts/providers.md",
+  "sourceDirName": "basic-concepts",
+  "slug": "/basic-concepts/providers",
+  "permalink": "/docs/basic-concepts/providers",
+  "draft": false,
+  "editUrl": "https://github.com/krok-o/docs/tree/main/packages/create-docusaurus/templates/shared/docs/basic-concepts/providers.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Events",
+    "permalink": "/docs/basic-concepts/events"
+  },
+  "next": {
+    "title": "Welcome to Krok",
+    "permalink": "/docs/intro"
+  }
+}

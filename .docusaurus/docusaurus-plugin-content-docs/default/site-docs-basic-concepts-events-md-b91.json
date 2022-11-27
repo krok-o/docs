@@ -1,0 +1,27 @@
+{
+  "unversionedId": "basic-concepts/events",
+  "id": "basic-concepts/events",
+  "title": "Events",
+  "description": "Subscribe to Events",
+  "source": "@site/docs/basic-concepts/events.md",
+  "sourceDirName": "basic-concepts",
+  "slug": "/basic-concepts/events",
+  "permalink": "/docs/basic-concepts/events",
+  "draft": false,
+  "editUrl": "https://github.com/krok-o/docs/tree/main/packages/create-docusaurus/templates/shared/docs/basic-concepts/events.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Commands",
+    "permalink": "/docs/basic-concepts/commands"
+  },
+  "next": {
+    "title": "Providers",
+    "permalink": "/docs/basic-concepts/providers"
+  }
+}
