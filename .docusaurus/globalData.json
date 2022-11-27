@@ -1,0 +1,93 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "basic-concepts/basics",
+          "docs": [
+            {
+              "id": "basic-concepts/basics",
+              "path": "/docs/basic-concepts/basics",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "basic-concepts/commands",
+              "path": "/docs/basic-concepts/commands",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "basic-concepts/events",
+              "path": "/docs/basic-concepts/events",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "basic-concepts/providers",
+              "path": "/docs/basic-concepts/providers",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "basic-concepts/repositories",
+              "path": "/docs/basic-concepts/repositories",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "installation-guide/operator-installation",
+              "path": "/docs/installation-guide/operator-installation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-operator/adding-a-new-repositroy",
+              "path": "/docs/tutorial-operator/adding-a-new-repositroy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-operator/real-life-setup",
+              "path": "/docs/tutorial-operator/real-life-setup",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-operator/testing-the-operator-with-some-basic-commands",
+              "path": "/docs/tutorial-operator/testing-the-operator-with-some-basic-commands",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/basic-concepts",
+              "path": "/docs/category/basic-concepts",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/installation-guide",
+              "path": "/docs/category/installation-guide",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/tutorial---operator",
+              "path": "/docs/category/tutorial---operator",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/category/basic-concepts",
+                "label": "Basic Concepts"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

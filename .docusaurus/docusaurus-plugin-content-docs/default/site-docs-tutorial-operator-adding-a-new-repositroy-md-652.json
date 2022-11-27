@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tutorial-operator/adding-a-new-repositroy",
+  "id": "tutorial-operator/adding-a-new-repositroy",
+  "title": "Adding a new Repository",
+  "description": "",
+  "source": "@site/docs/tutorial-operator/adding-a-new-repositroy.md",
+  "sourceDirName": "tutorial-operator",
+  "slug": "/tutorial-operator/adding-a-new-repositroy",
+  "permalink": "/docs/tutorial-operator/adding-a-new-repositroy",
+  "draft": false,
+  "editUrl": "https://github.com/krok-o/docs/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-operator/adding-a-new-repositroy.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tutorial - Operator",
+    "permalink": "/docs/category/tutorial---operator"
+  },
+  "next": {
+    "title": "Testing the operator with some basic commands",
+    "permalink": "/docs/tutorial-operator/testing-the-operator-with-some-basic-commands"
+  }
+}

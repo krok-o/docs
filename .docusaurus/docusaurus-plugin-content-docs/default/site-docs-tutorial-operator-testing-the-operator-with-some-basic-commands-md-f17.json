@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tutorial-operator/testing-the-operator-with-some-basic-commands",
+  "id": "tutorial-operator/testing-the-operator-with-some-basic-commands",
+  "title": "Testing the operator with some basic commands",
+  "description": "",
+  "source": "@site/docs/tutorial-operator/testing-the-operator-with-some-basic-commands.md",
+  "sourceDirName": "tutorial-operator",
+  "slug": "/tutorial-operator/testing-the-operator-with-some-basic-commands",
+  "permalink": "/docs/tutorial-operator/testing-the-operator-with-some-basic-commands",
+  "draft": false,
+  "editUrl": "https://github.com/krok-o/docs/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-operator/testing-the-operator-with-some-basic-commands.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Adding a new Repository",
+    "permalink": "/docs/tutorial-operator/adding-a-new-repositroy"
+  },
+  "next": {
+    "title": "Real-world setup",
+    "permalink": "/docs/tutorial-operator/real-life-setup"
+  }
+}

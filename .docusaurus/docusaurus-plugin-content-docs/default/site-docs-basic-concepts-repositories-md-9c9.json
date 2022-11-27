@@ -1,0 +1,27 @@
+{
+  "unversionedId": "basic-concepts/repositories",
+  "id": "basic-concepts/repositories",
+  "title": "Repositories",
+  "description": "What are Repositories",
+  "source": "@site/docs/basic-concepts/repositories.md",
+  "sourceDirName": "basic-concepts",
+  "slug": "/basic-concepts/repositories",
+  "permalink": "/docs/basic-concepts/repositories",
+  "draft": false,
+  "editUrl": "https://github.com/krok-o/docs/tree/main/packages/create-docusaurus/templates/shared/docs/basic-concepts/repositories.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Basic Concepts",
+    "permalink": "/docs/basic-concepts/basics"
+  },
+  "next": {
+    "title": "Commands",
+    "permalink": "/docs/basic-concepts/commands"
+  }
+}

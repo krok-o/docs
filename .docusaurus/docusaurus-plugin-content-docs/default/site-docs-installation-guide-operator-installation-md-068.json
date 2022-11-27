@@ -1,0 +1,27 @@
+{
+  "unversionedId": "installation-guide/operator-installation",
+  "id": "installation-guide/operator-installation",
+  "title": "Installing operator",
+  "description": "This is a detailed guide on how to install the operator. And then add some basic setup and CRDs.",
+  "source": "@site/docs/installation-guide/operator-installation.md",
+  "sourceDirName": "installation-guide",
+  "slug": "/installation-guide/operator-installation",
+  "permalink": "/docs/installation-guide/operator-installation",
+  "draft": false,
+  "editUrl": "https://github.com/krok-o/docs/tree/main/packages/create-docusaurus/templates/shared/docs/installation-guide/operator-installation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation Guide",
+    "permalink": "/docs/category/installation-guide"
+  },
+  "next": {
+    "title": "Tutorial - Operator",
+    "permalink": "/docs/category/tutorial---operator"
+  }
+}
