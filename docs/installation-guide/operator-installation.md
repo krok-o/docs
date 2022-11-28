@@ -6,6 +6,11 @@ sidebar_position: 1
 
 This is a detailed guide on how to install the operator. And then add some basic setup and CRDs.
 
+
+## Kind
+
+### Kind with registry
+
 ## CRDs, RBAC, kustomize
 
 ## Operator and Image overwrite
