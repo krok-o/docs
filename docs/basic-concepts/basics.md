@@ -8,7 +8,7 @@ Here you find a description of Krok itself, what it does, and how it works in ge
 
 ## What is Krok?
 
-Krok handles [events]() from various [platforms]() that the user can set up. What the hell does this mean?
+Krok handles [events](./events.md) from various [providers](./providers.md) that the user can set up. What the hell does this mean?
 
 Suppose the following scenario. You have several repositories across multiple services such as, _GitHub_, _Gitlab_,
 _Gitea_, _Bitbucket_ etc. You would like to have a consistent way of handling events like `push`, `pull`,
@@ -23,7 +23,7 @@ Krok offers a way to abstract this burden. Let's see how it does that.
 ## How does it work?
 
 Krok uses a Kubernetes [operator](https://github.com/krok-o/operator/). It has three main building blocks.
-[repositories](), [events]() and [commands](). You can read more about those in their respective guides.
+[repositories](./repositories.md), [events](./events.md) and [commands](./commands.md). You can read more about those in their respective guides.
 
 ### TL;DR
 

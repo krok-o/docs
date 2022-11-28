@@ -108,7 +108,7 @@
     "basic-concepts/commands": {
       "id": "basic-concepts/commands",
       "title": "Commands",
-      "description": "What are commands",
+      "description": "Commands are the second most important building block in Krok. They come right after repositories. Commands define the",
       "sidebar": "tutorialSidebar"
     },
     "basic-concepts/events": {
@@ -126,7 +126,7 @@
     "basic-concepts/repositories": {
       "id": "basic-concepts/repositories",
       "title": "Repositories",
-      "description": "What are Repositories",
+      "description": "Repositories are the first, main building block of Krok.",
       "sidebar": "tutorialSidebar"
     },
     "installation-guide/operator-installation": {

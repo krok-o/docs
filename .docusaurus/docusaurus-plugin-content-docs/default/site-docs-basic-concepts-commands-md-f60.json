@@ -2,7 +2,7 @@
   "unversionedId": "basic-concepts/commands",
   "id": "basic-concepts/commands",
   "title": "Commands",
-  "description": "What are commands",
+  "description": "Commands are the second most important building block in Krok. They come right after repositories. Commands define the",
   "source": "@site/docs/basic-concepts/commands.md",
   "sourceDirName": "basic-concepts",
   "slug": "/basic-concepts/commands",
