@@ -13,6 +13,7 @@ export default {
   "favicon": "img/favicon.ico",
   "organizationName": "krok-o",
   "projectName": "docs",
+  "deploymentBranch": "gh-pages",
   "i18n": {
     "defaultLocale": "en",
     "locales": [
@@ -44,7 +45,7 @@ export default {
       "title": "Krok",
       "logo": {
         "alt": "Krok Logo",
-        "src": "img/logo.svg"
+        "src": "img/logo.png"
       },
       "items": [
         {

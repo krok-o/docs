@@ -2,7 +2,7 @@
   "unversionedId": "basic-concepts/repositories",
   "id": "basic-concepts/repositories",
   "title": "Repositories",
-  "description": "What are Repositories",
+  "description": "Repositories are the first, main building block of Krok.",
   "source": "@site/docs/basic-concepts/repositories.md",
   "sourceDirName": "basic-concepts",
   "slug": "/basic-concepts/repositories",

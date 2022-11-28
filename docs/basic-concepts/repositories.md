@@ -8,12 +8,12 @@ Repositories are the first, main building block of Krok.
 
 ## What are Repositories
 
-Repositories are the repositories on any supported [platform](). For example, a repository on GitHub.
+Repositories are the repositories on any supported [provider](./providers.md). For example, a repository on GitHub.
 Once a user configures one in Krok, more about that in [creating a repository](#creating-a-repository), Krok
 will go ahead and create a WebHook for the requested events such as `push`, `pull` etc.
 
 Once a hook is successfully set up, Krok will listen for those events under a custom URL and run the configured
-[commands](). For example, let's suppose the user has a requirement that every repository must send a Slack message
+[commands](./commands.md). For example, let's suppose the user has a requirement that every repository must send a Slack message
 after certain events into a specific channel of a company Slack space.
 
 The user would configure the repositories to run this specific command on each subscribed event. But let's see some
