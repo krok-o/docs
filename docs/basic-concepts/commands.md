@@ -92,10 +92,29 @@ _Note_: At the time of this writing there are only a handful of commands availab
 
 ### SDK
 
+For Go commands, there is a convenience SDK provided by Krok to extract information from various payload types. This SDK
+can be found [here](https://github.com/krok-o/command-sdk). Krok will expand this as it matures.
+
 ### What language to use
 
 Virtually any language can be used that can produce an executable and get understand basic command line options.
 
+There are some [required arguments](#required-arguments) that the application must be able to take, otherwise, anything
+can be used. The [Commands](https://github.com/krok-o/commands) repo contains a few examples.
+
 ### Required arguments
 
+The following arguments are required by every command to be set:
+
+- `payload` -> this contains the payload received from the platform
+- `artifact-url` -> if the event involves the need for the source code ( like a push or a merge ) this url will point
+to a unique, in-cluster server from which the source can be downloaded
+- `event-type` -> the involved event ( `push`, `pull`, etc )
+- `platform` -> the configured platform on which the event happened ( `github`, `gitlab`, `gitea`, etc )
+
+The command sdk for Go commands contains a convenience method for adding these flags called `AddRequiredFlagsToCommand`.
+
 ### Platform Support
+
+The command has to declare what platform it supports. If the command declares that it support `github` and it is run on
+`gitea` it will report a failure and then skip this command.
