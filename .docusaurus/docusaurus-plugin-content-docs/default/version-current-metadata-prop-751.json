@@ -114,13 +114,13 @@
     "basic-concepts/events": {
       "id": "basic-concepts/events",
       "title": "Events",
-      "description": "Subscribe to Events",
+      "description": "Events come from providers. For example, push event from GitHub or GitLab. These are passed on to commands as they are",
       "sidebar": "tutorialSidebar"
     },
     "basic-concepts/providers": {
       "id": "basic-concepts/providers",
       "title": "Providers",
-      "description": "",
+      "description": "Providers are the platform that Krok supports such as GitHub, GitLab, Gitea.",
       "sidebar": "tutorialSidebar"
     },
     "basic-concepts/repositories": {

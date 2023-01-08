@@ -2,7 +2,7 @@
   "unversionedId": "basic-concepts/providers",
   "id": "basic-concepts/providers",
   "title": "Providers",
-  "description": "",
+  "description": "Providers are the platform that Krok supports such as GitHub, GitLab, Gitea.",
   "source": "@site/docs/basic-concepts/providers.md",
   "sourceDirName": "basic-concepts",
   "slug": "/basic-concepts/providers",
