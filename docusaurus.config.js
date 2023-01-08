@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Krok App',
   tagline: 'Krok and its operator',
-  url: 'https://krok-o.github.io/docs/',
-  baseUrl: '/',
+  url: 'https://krok-o.github.io',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
