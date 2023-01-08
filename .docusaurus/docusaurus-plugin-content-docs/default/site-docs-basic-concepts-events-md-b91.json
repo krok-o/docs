@@ -2,7 +2,7 @@
   "unversionedId": "basic-concepts/events",
   "id": "basic-concepts/events",
   "title": "Events",
-  "description": "Subscribe to Events",
+  "description": "Events come from providers. For example, push event from GitHub or GitLab. These are passed on to commands as they are",
   "source": "@site/docs/basic-concepts/events.md",
   "sourceDirName": "basic-concepts",
   "slug": "/basic-concepts/events",

@@ -9,7 +9,7 @@ const config = {
   title: 'Krok App',
   tagline: 'Krok and its operator',
   url: 'https://krok-o.github.io',
-  baseUrl: '/docs/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',

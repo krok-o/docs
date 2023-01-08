@@ -6,7 +6,7 @@
 export default {
   "title": "Krok App",
   "tagline": "Krok and its operator",
-  "url": "https://krok.app",
+  "url": "https://krok-o.github.io",
   "baseUrl": "/",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
@@ -102,7 +102,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2022 Krok, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2023 Krok, Inc. Built with Docusaurus."
     },
     "prism": {
       "theme": {
